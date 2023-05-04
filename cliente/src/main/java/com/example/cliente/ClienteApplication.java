@@ -16,7 +16,7 @@ public class ClienteApplication {
     @Bean
     public OpenAPI custoOpenAPI() {
         return new OpenAPI().info(new Info()
-                .title("OPEN API MICROSERVICIOS CATALOGO")
+                .title("OPEN API MICROSERVICIOS CLIENTE")
                 .version("0.0.1")
                 .description("servicio web catalogo")
                 .termsOfService("http://swagger.io/terms")
