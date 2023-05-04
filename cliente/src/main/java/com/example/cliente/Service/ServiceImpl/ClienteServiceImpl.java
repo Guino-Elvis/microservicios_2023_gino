@@ -1,14 +1,13 @@
-package com.example.cliente.Service.ServiceImpl;
+package com.example.cliente.service.serviceImpl;
 
-import java.util.List;
-import java.util.Optional;
-
+import com.example.cliente.entity.Cliente;
+import com.example.cliente.repository.ClienteRepository;
+import com.example.cliente.service.ClienteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.cliente.Entity.Cliente;
-import com.example.cliente.Repository.ClienteRepository;
-import com.example.cliente.Service.ClienteService;
+import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ClienteServiceImpl implements ClienteService {
@@ -17,34 +16,26 @@ public class ClienteServiceImpl implements ClienteService {
 
     @Override
     public List<Cliente> listar() {
-        // TODO Auto-generated method stub
         return clienteRepository.findAll();
     }
 
     @Override
     public Cliente guardar(Cliente cliente) {
-        // TODO Auto-generated method stub
         return clienteRepository.save(cliente);
     }
 
     @Override
-
     public Cliente actualizar(Cliente cliente) {
-        // TODO Auto-generated method stub
         return clienteRepository.save(cliente);
     }
 
     @Override
     public Optional<Cliente> listarPorId(Integer id) {
-        // TODO Auto-generated method stub
         return clienteRepository.findById(id);
     }
 
     @Override
     public void eliminarPorId(Integer id) {
-        // TODO Auto-generated method stub
         clienteRepository.deleteById(id);
-
     }
-
 }

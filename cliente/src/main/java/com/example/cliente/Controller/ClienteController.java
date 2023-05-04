@@ -1,12 +1,12 @@
-package com.example.cliente.Controller;
+package com.example.cliente.controller;
 
-import java.util.List;
-
-import org.springframework.web.bind.annotation.*;
+import com.example.cliente.entity.Cliente;
+import com.example.cliente.service.ClienteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import com.example.cliente.Entity.Cliente;
-import com.example.cliente.Service.ClienteService;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/cliente")

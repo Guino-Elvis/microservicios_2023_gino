@@ -1,9 +1,7 @@
-package com.example.venta.Repository;
+package com.example.venta.repository;
 
+import com.example.venta.entity.Venta;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.example.venta.Entity.Venta;
-
 public interface VentaRepository extends JpaRepository<Venta, Integer> {
-
 }

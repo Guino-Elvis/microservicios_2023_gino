@@ -1,11 +1,10 @@
-package com.example.venta.Service.Impl;
+package com.example.venta.service.impl;
 
+import com.example.venta.entity.Venta;
+import com.example.venta.repository.VentaRepository;
+import com.example.venta.service.VentaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import com.example.venta.Entity.Venta;
-import com.example.venta.Repository.VentaRepository;
-import com.example.venta.Service.VentaService;
 
 import java.util.List;
 import java.util.Optional;
