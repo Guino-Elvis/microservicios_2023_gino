@@ -1,14 +1,9 @@
-server:
-    port: 8181
-spring: 
-    jpa: 
-        hibernate.ddl-auto: update
-        generate-ddl: true
-        show-sql: true
-    datasource: 
-        driverClassName: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://localhost:3306/catalogo
-        username: root
-        password:
+spring:
+ application: 
+  name: catalogo-service 
+ profiles: 
+   active: development
+ config:
+  import: optional:configserve:http://root:s3cr3t@localhost:8084
 
 
