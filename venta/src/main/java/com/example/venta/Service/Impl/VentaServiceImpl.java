@@ -13,7 +13,7 @@ import java.util.Optional;
 public class VentaServiceImpl implements VentaService {
     @Autowired
     private VentaRepository ventaRepository;
-
+//s
     @Override
     public List<Venta> listar() {
         return ventaRepository.findAll();
