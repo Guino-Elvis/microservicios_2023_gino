@@ -54,7 +54,7 @@ public class VentaServiceImpl implements VentaService {
             System.out.println("Despues de la peticion");
             System.out.println(producto.toString());
             System.out.println(producto.getNombre());
-            ventaDetalle.setProductoId(id);
+            // ventaDetalle.setProductoId(id);
             return ventaDetalle;
         }).collect(Collectors.toList());
         venta.setDetalle(ventaDetalles);
