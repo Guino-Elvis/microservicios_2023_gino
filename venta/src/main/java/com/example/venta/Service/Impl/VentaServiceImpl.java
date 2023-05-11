@@ -26,7 +26,6 @@ public class VentaServiceImpl implements VentaService {
     @Autowired
     private ProductoFeign productoFeign;
 
-    // s
     @Override
     public List<Venta> listar() {
         return ventaRepository.findAll();
@@ -54,7 +53,7 @@ public class VentaServiceImpl implements VentaService {
             System.out.println("Despues de la peticion");
             System.out.println(producto.toString());
             System.out.println(producto.getNombre());
-            // ventaDetalle.setProductoId(id);
+            ventaDetalle.setProducto(producto);
             return ventaDetalle;
         }).collect(Collectors.toList());
         venta.setDetalle(ventaDetalles);
